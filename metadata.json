@@ -1,0 +1,5 @@
+{
+  "name": "SmartServer SSH",
+  "description": "A modern, AI-powered server management terminal featuring smart connection acceleration and an integrated Gemini AI DevOps assistant.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,30 @@
+{
+  "name": "smart-server-ssh",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "node server.js",
+    "start": "concurrently \"npm run server\" \"npm run dev\" --kill-others --names \"SERVER,CLIENT\" --prefix-colors \"magenta,cyan\"",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@google/genai": "*",
+    "ssh2": "^1.15.0",
+    "ws": "^8.16.0",
+    "xterm": "^5.3.0",
+    "xterm-addon-fit": "^0.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^8.2.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}
